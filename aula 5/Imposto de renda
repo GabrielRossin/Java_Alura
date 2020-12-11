@@ -1,0 +1,34 @@
+
+public class ImpostoRenda
+{
+	public static void main(String[] args)
+	{
+		double salario = 3300.0;
+		double ir = 0;
+
+
+		if(salario >= 1900 && salario <= 2800)
+		{
+			ir = (salario * 0.075) - 142;
+		}
+		else
+		{
+			if(salario > 2800 && salario <= 3751)
+			{
+				ir = (salario * 0.15) - 350;
+			}
+			else
+			{
+				if(salario > 3751 && salario <= 4664)
+				{
+					ir = (salario * 0.0225) - 636;
+				}
+			}
+		}
+
+		System.out.println("O valor a ser declarado é: " + ir);
+
+
+	}
+
+}
